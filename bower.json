@@ -4,5 +4,7 @@
     "ember": "~2.7.0-beta.1",
     "ember-cli-shims": "0.1.1",
     "ember-qunit-notifications": "0.1.0",
+    "admin-lte": "2.3.5",
+    "font-awesome": "4.6.3",
   }
 }
