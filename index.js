@@ -3,7 +3,7 @@
 
 module.exports = {
   name: 'ember-cli-adminlte',
-  include: function(app) {
+  included: function(app) {
     this._super.included(app);
     app.import('bower_components/admin-lte/bootstrap/css/bootstrap.css');
     app.import('bower_components/admin-lte/dist/css/skins/_all-skins.css');
