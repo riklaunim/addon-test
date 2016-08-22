@@ -7,11 +7,7 @@ export default Ember.Controller.extend({
   imageUploadApiBaseUrl: undefined,
   saveMessageKey: undefined,
   imageFieldName: 'image',
-  initialData: Ember.computed('place', function() {
-    return {'place': this.get('place')};
-  }),
-  placeController: Ember.inject.controller('place'),
-  place: Ember.computed.reads('placeController.model'),
+  initialData: undefined,
   notificationService: Ember.inject.service('notifications'),
   uploadService: Ember.inject.service('image-uploader'),
   intl: Ember.inject.service(),
