@@ -4,12 +4,9 @@ export default Ember.Controller.extend({
   listRouteName: undefined,
   editRouteName: undefined,
   modelName: undefined,
-  imageUploadApiBaseUrl: undefined,
   saveMessageKey: undefined,
-  imageFieldName: 'image',
   initialData: undefined,
   notificationService: Ember.inject.service('notifications'),
-  uploadService: Ember.inject.service('image-uploader'),
   intl: Ember.inject.service(),
   doSuccessTransition: function () {
     this.transitionToRoute(this.get('listRouteName'));
@@ -18,27 +15,11 @@ export default Ember.Controller.extend({
     cancel: function() {
       this.transitionToRoute(this.get('listRouteName'));
     },
-    saveObject: function(modelObject, pickedFile) {
-      if (this.get('removeImage')) {
-        pickedFile = undefined;
-      }
+    saveObject: function(modelObject) {
       modelObject.save().then(
         (modelObject) => {
           this.get('notificationService').success(this.get('intl').t(this.get('saveMessageKey')));
-          if (pickedFile) {
-            let baseURL = this.get('imageUploadApiBaseUrl');
-            let apiEndpointUrl = `${baseURL}${modelObject.id}/`;
-            this.get('uploadService').uploadImageToModel(apiEndpointUrl, pickedFile, this.get('imageFieldName'), (successResponse) => {
-              let imageUrl = successResponse.data.attributes[this.get('imageFieldName')];
-              modelObject.set(this.get('imageFieldName'), imageUrl);
-              this.doSuccessTransition(modelObject);
-            }, () => {
-              this.get('notificationService').error(this.get('intl').t('controllers.errorSavingImage'));
-              this.transitionToRoute(this.get('editRouteName'), modelObject);
-            });
-          } else {
-            this.doSuccessTransition(modelObject);
-          }
+          this.doSuccessTransition(modelObject);
         }, () => {
         }
       );
