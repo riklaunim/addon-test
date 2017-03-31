@@ -19,6 +19,7 @@ module.exports = {
     app.import('vendor/shims/jquery.js');
     app.import('bower_components/fullcalendar/dist/fullcalendar.js');
     app.import('bower_components/fullcalendar/dist/lang/pl.js');
+    app.import('bower_components/fullcalendar/dist/lang/fr.js');
     app.import('bower_components/fullcalendar/dist/lang/de.js');
     app.import('bower_components/fullcalendar/dist/lang/ru.js');
     app.import('bower_components/fullcalendar/dist/lang/nb.js');
