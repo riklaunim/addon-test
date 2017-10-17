@@ -25,12 +25,5 @@ module.exports = function(defaults) {
   app.import('bower_components/admin-lte/plugins/daterangepicker/daterangepicker.js');
   app.import('bower_components/admin-lte/plugins/daterangepicker/daterangepicker.css');
   app.import('vendor/shims/jquery.js');
-  app.import('bower_components/fullcalendar/dist/fullcalendar.js');
-  app.import('bower_components/fullcalendar/dist/lang/pl.js');
-  app.import('bower_components/fullcalendar/dist/lang/fr.js');
-  app.import('bower_components/fullcalendar/dist/lang/de.js');
-  app.import('bower_components/fullcalendar/dist/lang/ru.js');
-  app.import('bower_components/fullcalendar/dist/lang/nb.js');
-  app.import('bower_components/fullcalendar/dist/fullcalendar.min.css');
   return app.toTree();
 };
