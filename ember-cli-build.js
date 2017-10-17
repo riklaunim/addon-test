@@ -22,8 +22,6 @@ module.exports = function(defaults) {
   app.import('bower_components/admin-lte/dist/js/app.min.js');
   app.import('bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js');
   app.import('bower_components/admin-lte/plugins/chartjs/Chart.min.js');
-  app.import('bower_components/admin-lte/plugins/daterangepicker/daterangepicker.js');
-  app.import('bower_components/admin-lte/plugins/daterangepicker/daterangepicker.css');
   app.import('vendor/shims/jquery.js');
   return app.toTree();
 };
