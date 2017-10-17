@@ -42,13 +42,7 @@
     "loader.js": "^4.0.1",
     "ember-font-awesome": "2.1.1",
     "ember-cli-less": "1.5.3",
-    "ember-intl": "2.12.4"
-  },
-  "keywords": [
-    "ember-addon"
-  ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.6",
+    "ember-intl": "2.12.4",
     "@bower_components/admin-lte": "almasaeed2010/AdminLTE#2.3.11",
     "@bower_components/ember": "components/ember#~2.7.0-beta.1",
     "@bower_components/ember-cli-shims": "ember-cli/ember-cli-shims#0.1.1",
@@ -57,6 +51,12 @@
     "@bower_components/jquery": "jquery/jquery-dist#>= 1.7.0 < 3.0.0",
     "@bower_components/moment": "moment/moment#2.14.1",
     "@bower_components/qunit-notifications": "dockyard/qunit-notifications#~0.1.0"
+  },
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "^5.1.6"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
