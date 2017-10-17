@@ -13,7 +13,6 @@ module.exports = {
     app.import('bower_components/admin-lte/bootstrap/js/bootstrap.min.js');
     app.import('bower_components/admin-lte/dist/js/app.min.js');
     app.import('bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js');
-    app.import('bower_components/admin-lte/plugins/chartjs/Chart.min.js');
     app.import('vendor/shims/jquery.js');
   }
 };
