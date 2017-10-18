@@ -19,7 +19,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "admin-lte": "2.3.11",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.7.0-beta.4",
@@ -43,14 +42,15 @@
     "loader.js": "^4.0.1",
     "ember-font-awesome": "2.1.1",
     "ember-cli-less": "1.5.3",
-    "ember-intl": "2.12.4",
-    "font-awesome": "4.7.0",
-    "moment": "2.19.1"
+    "ember-intl": "2.12.4"
   },
   "keywords": [
     "ember-addon"
   ],
   "dependencies": {
+    "admin-lte": "2.3.11",
+    "font-awesome": "4.7.0",
+    "moment": "2.19.1",
     "ember-cli-babel": "^5.1.6",
     "@bower_components/ember": "components/ember#~2.7.0-beta.1",
     "@bower_components/ember-cli-shims": "ember-cli/ember-cli-shims#0.1.1",
