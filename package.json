@@ -52,11 +52,9 @@
     "font-awesome": "4.7.0",
     "moment": "2.19.1",
     "ember-cli-babel": "^5.1.6",
-    "@bower_components/ember": "components/ember#~2.7.0-beta.1",
-    "@bower_components/ember-cli-shims": "ember-cli/ember-cli-shims#0.1.1",
-    "@bower_components/ember-qunit-notifications": "dockyard/ember-qunit-notifications#0.1.0",
-    "@bower_components/jquery": "jquery/jquery-dist#>= 1.7.0 < 3.0.0",
-    "@bower_components/qunit-notifications": "dockyard/qunit-notifications#~0.1.0"
+    "jquery": "2.2.4",
+    "ember": "^2.7.0",
+    "ember-cli-shims": "^0.1.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
