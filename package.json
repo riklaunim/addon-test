@@ -52,7 +52,7 @@
     "ember-cli-babel": "^5.1.6",
     "font-awesome": "4.7.0",
     "jquery": "<3.0.0",
-    "moment": "2.19.1",
+    "moment": "2.19.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
